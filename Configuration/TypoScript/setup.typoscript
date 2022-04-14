@@ -6,6 +6,7 @@ tt_content.content_randomizer {
   variables.shortcuts = RECORDS
   variables.shortcuts {
     source.field = tx_contentrandomizer_elements
+    source.listNum = rand
     tables = tt_content
   }
 
