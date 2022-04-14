@@ -3,11 +3,14 @@ tt_content.content_randomizer {
   templateName = Shortcut
 
   # Keep this, since the "conf" option can be used
-  variables.shortcuts = RECORDS
+  variables.shortcuts = COA_INT
   variables.shortcuts {
-    source.field = tx_contentrandomizer_elements
-    source.listNum = rand
-    tables = tt_content
+    10 = RECORDS
+    10 {
+      source.field = tx_contentrandomizer_elements
+      source.listNum = rand
+      tables = tt_content
+    }
   }
 
   stdWrap {
