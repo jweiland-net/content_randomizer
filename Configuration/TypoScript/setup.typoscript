@@ -1,0 +1,18 @@
+tt_content.content_randomizer =< lib.contentElement
+tt_content.content_randomizer {
+  templateName = Shortcut
+
+  # Keep this, since the "conf" option can be used
+  variables.shortcuts = RECORDS
+  variables.shortcuts {
+    source.field = tx_contentrandomizer_elements
+    tables = tt_content
+  }
+
+  stdWrap {
+    editIcons = tt_content: header [header_layout], tx_contentrandomizer_elements
+    editIcons {
+      iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.shortcut
+    }
+  }
+}

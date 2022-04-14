@@ -1,0 +1,29 @@
+{
+	"name": "jweiland/content-randomizer",
+	"description": "Content Randomizer",
+	"type": "typo3-cms-extension",
+	"version": "0.0.1",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Stefan Froemken",
+			"email": "sfroemken@jweiland.net"
+		}
+	],
+	"require": {
+		"typo3/cms-core": "^10.4.19 || ^11.5.1"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
+	},
+	"autoload": {
+		"psr-4": {
+			"JWeiland\\ContentRandomizer\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "content_randomizer"
+		}
+	}
+}
